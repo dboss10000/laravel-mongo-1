@@ -46,7 +46,7 @@ class UserController extends \BaseController {
 				->withInput(Input::except('password'));
 		} else {
 			// store
-			$user = new user;
+			$user = new User;
 			$user->uid      = Input::get('uid');
 			$user->save();
 
